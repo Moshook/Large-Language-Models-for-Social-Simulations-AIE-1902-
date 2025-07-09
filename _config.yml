@@ -1,19 +1,19 @@
 # Site settings
 course_name: CSS5120
-course_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare aliquam mattis. Donec hendrerit sollicitudin urna. Aliquam venenatis rutrum velit, at lobortis dui cursus a. Nam varius metus in turpis maximus, ut rhoncus tellus dictum. In aliquam tortor nec mi dapibus, sit amet vehicula dolor auctor."
-course_semester: "Fall 1998"
+course_description: "The course examines the fundamental theories and updated research progress in computational linguistics. It will cover the goals and methods of computational linguistics in historical perspective, and then delves in some detail into the essential concepts of linguistic structure and analysis, interpretation, and language use, as well as acquisition of knowledge for language, statistical and machine learning techniques in natural language processing, and miscellaneous applications."
+course_semester: "Spring 2025"
 
 baseurl: "/CSS5120" # the subpath of your site, e.g. /blog/
 url: "http://TalionS.github.io/" # the base hostname & protocol for your site
 
-schoolname: "Hogwarts"
-schoolurl: "https://hogwarts.edu"
-twitter_username: username 
+schoolname: "The Chinese University of Hong Kong, Shenzhen"
+schoolurl: "https://cuhk.edu.cn"
+# twitter_username: username 
 
 address: |
-    School of Witchcraft and Wizardry
-    Hogwarts
-    Scotland
+    2001 Longxiang Road
+    Longgang District
+    Shenzhen
 
 # Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
 # google_analytics: UA-XXXXXXXX-X
