@@ -9,7 +9,7 @@ links:
     #   name: notes
     # - url: /static_files/presentations/code.zip
     #   name: codes
-    - url: /static_files/2. Course materials/Course Slides/week1/Lecture1_Zhanzhan.pptx
+    - url: /static_files/2.Coursematerials/Course_Slides/week1/Lecture1_Zhanzhan.pptx
       name: slides
 ---
 <!-- **Suggested Readings:**
