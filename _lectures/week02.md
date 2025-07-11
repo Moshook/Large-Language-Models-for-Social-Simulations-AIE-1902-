@@ -3,7 +3,7 @@ type: lecture
 date: 2025-01-16
 title: Introduction to Large Language Models - Prompt Engineering
 # tldr: "Short text to discribe what this lecture is about."
-thumbnail: /static_files/presentations/lec.jpg
+# thumbnail: /static_files/presentations/lec.jpg
 links: 
     # - url: /static_files/presentations/lec.zip
     #   name: notes
