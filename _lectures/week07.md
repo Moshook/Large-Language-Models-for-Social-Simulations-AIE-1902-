@@ -1,0 +1,18 @@
+---
+type: lecture
+date: 2025-03-13
+title: LLM-based Multi-agent Systems
+# tldr: "Short text to discribe what this lecture is about."
+# thumbnail: /static_files/presentations/lec.jpg
+links: 
+    # - url: /static_files/presentations/lec.zip
+    #   name: notes
+    # - url: /static_files/presentations/code.zip
+    #   name: codes
+    - url: /static_files/2.Coursematerials/Course_Slides/week7/Lecture7_Zhanzhan.pptx
+      name: slides
+---
+**Suggested Readings:**
+- [Readings 1](/static_files/2.Coursematerials/Reading_Materials/03.13-DO_LLMS_RECOGNIZE_YOUR_PREFERENCES&#x3f;_EVALUATING_PERSONALIZED_PREFERENCE_FOLLOWING_IN_LLMS.pdf)
+- [Readings 2](/Users/talion/Documents/CSS5120/static_files/2.Coursematerials/Reading_Materials/03.13-Wisdom_of_the_silicon_crowd_LLM_ensemble_prediction_capabilities_rival_human_crowd_accuracy.pdf)
+<!-- - [Readings 3](/static_files/2.Coursematerials/Reading_Materials/03.06-Performance_and_biases_of_Large_Language_Models__in_public_opinion_simulation.pdf) -->
