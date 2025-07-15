@@ -3,7 +3,7 @@ type: lecture
 date: 2025-01-16
 title: Introduction to Large Language Models - Prompt Engineering
 # tldr: "Short text to discribe what this lecture is about."
-# thumbnail: /static_files/presentations/lec.jpg
+thumbnail: /static_files/presentations/lec.jpg
 links: 
     # - url: /static_files/presentations/lec.zip
     #   name: notes
@@ -13,5 +13,5 @@ links:
       name: slides
 ---
 **Suggested Readings:**
-- [Readings 1](/static_files/2.Coursematerials/Reading_Materials/01.16-Evaluating_the_ability_of_large_language_models_to_emulate_personality.pdf)
-- [Readings 2](/static_files/2.Coursematerials/Reading_Materials/01.16-User-Driven_Value_Alignment-_Understanding_Users’_Perceptions_and_Strategies_for_Addressing_Biased_and_Discriminatory_Statements_in_AI_Companions.pdf)
+- [Readings 1]({{site.baseurl}}/static_files/2.Coursematerials/Reading_Materials/01.16-Evaluating_the_ability_of_large_language_models_to_emulate_personality.pdf)
+- [Readings 2]({{site.baseurl}}/static_files/2.Coursematerials/Reading_Materials/01.16-User-Driven_Value_Alignment-_Understanding_Users’_Perceptions_and_Strategies_for_Addressing_Biased_and_Discriminatory_Statements_in_AI_Companions.pdf)
