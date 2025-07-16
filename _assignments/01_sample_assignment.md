@@ -6,5 +6,5 @@ hide_from_announcments: false
 due_event: 
     type: due
     date: 2025-04-24
-    description: 'Assignment #1 due'
+    title: 'Assignment #1 due'
 ---
