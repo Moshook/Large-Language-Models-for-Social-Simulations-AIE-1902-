@@ -22,9 +22,11 @@ layout: default
         {% assign all_events = site.lectures %}
         {% assign all_events = all_events | concat: site.assignments %}
         {% assign all_events = all_events | concat: all_assignment_dues %}
-        {% assign all_events_sorted = all_events | sort: 'date' %}
+        {% for e in all_events %}
+        <p>{{ e.title }} → {{ e.date }}</p>
+        {% endfor %}
 
-        {% for event in all_events_sorted %}
+        {% for event in all_events %}
         <li class="table-row table-row-{{ event.type}}">
             {% include schedule_row_{{ event.type }}.html event=event %}
         </li>
