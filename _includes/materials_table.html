@@ -1,9 +1,15 @@
-{% assign max_rows = 10 %} {# 最大行数，可以根据最长的列表调整 #}
 {% assign lists = "" | split: "" %}
 {% assign lists = lists | push: site.data.eval %}
 {% assign lists = lists | push: site.data.fine_tuning %}
 {% assign lists = lists | push: site.data.social_simulation %}
 {% assign lists = lists | push: site.data.alignment %}
+
+{% assign max_rows = 0 %}
+{% for list in lists %}
+{% if list.size > max_rows %}
+{% assign max_rows = list.size %}
+{% endif %}
+{% endfor %}
 
 {% for i in (0..max_rows) %}
 <tr>
