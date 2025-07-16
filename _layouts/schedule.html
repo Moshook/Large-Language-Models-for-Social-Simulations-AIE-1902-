@@ -26,9 +26,10 @@ layout: default
         {% for e in site.lectures %}
         <p>{{ e.title }} → {{ e.date }}</p>
         {% endfor %}
-        {% assign all_events_sorted = all_events | sort: 'date' %}
+        <!-- {% assign all_events_sorted = all_events | sort: 'date' %} -->
 
-        {% for event in all_events_sorted %}
+        <!-- {% for event in all_events_sorted %} -->
+        {% for event in all_events %}
         <li class="table-row table-row-{{ event.type}}">
             {% include schedule_row_{{ event.type }}.html event=event %}
         </li>
