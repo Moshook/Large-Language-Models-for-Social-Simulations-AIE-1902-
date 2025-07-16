@@ -17,20 +17,27 @@ layout: default
             <div class="col col-4">Course Material</div>
         </li>
 
-        {% comment %} Step 1: 收集所有 due_event {% endcomment %}
+        {%- comment -%}
+        Step 1: 提取 assignments 中的 due_event
+        {%- endcomment -%}
         {% assign all_assignment_dues = "" | split: "" %}
         {% for asg in site.assignments %}
         {% if asg.due_event and asg.due_event.date %}
-        {% assign all_assignment_dues = all_assignment_dues | push: asg.due_event %}
+        {% assign one = "" | split: "" | push: asg.due_event %}
+        {% assign all_assignment_dues = all_assignment_dues | concat: one %}
         {% endif %}
         {% endfor %}
 
-        {% comment %} Step 2: 合并所有 events {% endcomment %}
+        {%- comment -%}
+        Step 2: 合并所有事件类型
+        {%- endcomment -%}
         {% assign all_events = site.events | concat: site.lectures %}
         {% assign all_events = all_events | concat: site.assignments %}
         {% assign all_events = all_events | concat: all_assignment_dues %}
 
-        {% comment %} Step 3: 去除没有 date 的对象 {% endcomment %}
+        {%- comment -%}
+        Step 3: 只保留具有有效日期的事件
+        {%- endcomment -%}
         {% assign valid_events = "" | split: "" %}
         {% for event in all_events %}
         {% if event.date %}
@@ -38,75 +45,21 @@ layout: default
         {% endif %}
         {% endfor %}
 
-        {% comment %} Step 4: 排序 {% endcomment %}
+        {%- comment -%}
+        Step 4: 排序事件（按日期升序）
+        {%- endcomment -%}
         {% assign all_events_sorted = valid_events | sort: "date" %}
-        <!-- {%- assign all_assignment_dues = "" | split: "" -%}
-        {%- for asg in site.assignments -%}
-        {%- if asg.due_event -%}
-        {%- assign all_assignment_dues = all_assignment_dues | push: asg.due_event -%}
-        {%- endif -%}
-        {%- endfor -%}
 
-        {%- assign all_events = site.events | concat: site.lectures -%}
-        {%- assign all_events = all_events | concat: site.assignments -%}
-        {%- assign all_events = all_events | concat: all_assignment_dues -%}
-
-        {%- assign valid_events = "" | split: "" -%}
-        {%- for event in all_events -%}
-        {%- if event.date -%}
-        {%- assign valid_events = valid_events | push: event -%}
-        {%- endif -%}
-        {%- endfor -%}
-
-        {%- assign all_events_sorted = valid_events | sort: "date" -%} -->
-
-        {%- for event in all_events_sorted -%}
-        <li class="table-row table-row-{{ event.type | default: 'unknown' }}">
-            {% capture partial_path %}schedule_row_{{ event.type | default: 'unknown' }}.html{% endcapture %}
-            {% include {{ partial_path }} event=event %}
-        </li>
-        {%- endfor -%}
-
-    </ul>
-</div>
-<!-- ---
-layout: default
----
-
-<header class="post-header">
-    <h1 class="post-title">Schedule</h1>
-</header>
-
-{{ content }}
-
-<div class="home" style="font-size: 0.8em;">
-    <ul class="responsive-table" style="margin-left: 0;">
-        <li class="table-header">
-            <div class="col col-1">Event</div>
-            <div class="col col-1-2">Date</div>
-            <div class="col col-2">Description</div>
-            <div class="col col-4">Course Material</div>
-        </li>
-
-        {% assign all_events = site.events | concat: site.lectures %}
-        {% assign all_events = all_events | concat: site.assignments %}
-
-        {% for assignment in site.assignments %}
-        {% if assignment.due_event %}
-        {% assign all_events = all_events | push: assignment.due_event %}
-        {% endif %}
-        {% endfor %}
-
-        {% assign all_events_sorted = all_events | sort: "date" %}
-
+        {%- comment -%}
+        Step 5: 渲染每个事件（调用对应的 partial 模板）
+        {%- endcomment -%}
         {% for event in all_events_sorted %}
         <li class="table-row table-row-{{ event.type }}">
             {% include schedule_row_{{ event.type }}.html event=event %}
         </li>
         {% endfor %}
-
     </ul>
-</div> -->
+</div>
 <!-- ---
 layout: default
 ---
