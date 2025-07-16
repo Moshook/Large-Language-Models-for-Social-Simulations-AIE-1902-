@@ -1,0 +1,20 @@
+{% assign max_rows = 10 %} {# 最大行数，可以根据最长的列表调整 #}
+{% assign lists = "" | split: "" %}
+{% assign lists = lists | push: site.data.eval %}
+{% assign lists = lists | push: site.data.fine_tuning %}
+{% assign lists = lists | push: site.data.social_simulation %}
+{% assign lists = lists | push: site.data.alignment %}
+
+{% for i in (0..max_rows) %}
+<tr>
+    {% for list in lists %}
+    <td>
+        {% if list.size > i %}
+        <a href="{{ list[i].url | relative_url }}">{{ list[i].title }}</a>
+        {% else %}
+        &nbsp;
+        {% endif %}
+    </td>
+    {% endfor %}
+</tr>
+{% endfor %}
