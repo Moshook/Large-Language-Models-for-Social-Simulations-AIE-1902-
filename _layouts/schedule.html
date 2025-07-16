@@ -25,7 +25,6 @@ layout: default
         {% for e in site.lectures %}
         <p>{{ e.title }} → {{ e.date }}</p>
         {% endfor %}
-        <!-- {% assign all_events_sorted = all_events | sort: 'date' %} -->
 
         {% for event in all_events %}
         <li class="table-row table-row-{{ event.type}}">
