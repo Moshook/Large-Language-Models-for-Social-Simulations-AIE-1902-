@@ -17,43 +17,33 @@ layout: default
             <div class="col col-4">Course Material</div>
         </li>
 
-        {%- comment -%}
-        Step 1: 提取 assignments 中的 due_event
-        {%- endcomment -%}
-        {% assign all_assignment_dues = "" | split: "" %}
-        {% for asg in site.assignments %}
-        {% if asg.due_event and asg.due_event.date %}
-        {% assign one = "" | split: "" | push: asg.due_event %}
-        {% assign all_assignment_dues = all_assignment_dues | concat: one %}
-        {% endif %}
-        {% endfor %}
+        {%- assign all_assignment_dues = "" | split: "" -%}
+        {%- for asg in site.assignments -%}
+        {%- if asg.due_event -%}
+        {%- assign all_assignment_dues = all_assignment_dues | push: asg.due_event -%}
+        {%- endif -%}
+        {%- endfor -%}
 
-        {%- comment -%}
-        Step 2: 合并所有事件类型
-        {%- endcomment -%}
-        {% assign all_events = site.events | concat: site.lectures %}
-        {% assign all_events = all_events | concat: site.assignments %}
-        {% assign all_events = all_events | concat: all_assignment_dues %}
+        {%- assign all_events = site.events | concat: site.lectures -%}
+        {%- assign all_events = all_events | concat: site.assignments -%}
+        {%- assign all_events = all_events | concat: all_assignment_dues -%}
 
-        {%- comment -%}
-        Step 3: 只保留具有有效日期的事件
-        {%- endcomment -%}
-        {% assign valid_events = "" | split: "" %}
+        <!-- 🔍 Debug: Show problematic events -->
         {% for event in all_events %}
-        {% if event.date %}
-        {% assign valid_events = valid_events | push: event %}
+        {% capture debug_date %}{{ event.date }}{% endcapture %}
+        {% if debug_date == "" %}
+        <p style="color:red;">⚠️ Missing date for event: {{ event.title | default: event.description | default: 'Unknown
+            Event' }}</p>
+        {% elsif debug_date contains "[" or debug_date contains "]" %}
+        <p style="color:red;">❌ Date is array or invalid for event: {{ event.title | default: event.description |
+            default: 'Unknown Event' }} — {{ debug_date }}</p>
         {% endif %}
         {% endfor %}
 
-        {%- comment -%}
-        Step 4: 排序事件（按日期升序）
-        {%- endcomment -%}
-        {% assign all_events_sorted = valid_events | sort: "date" %}
+        <!-- ✅ Safe sorting using custom filter -->
+        {% assign sorted_events = all_events | sort: "date" %}
 
-        {%- comment -%}
-        Step 5: 渲染每个事件（调用对应的 partial 模板）
-        {%- endcomment -%}
-        {% for event in all_events_sorted %}
+        {% for event in sorted_events %}
         <li class="table-row table-row-{{ event.type }}">
             {% include schedule_row_{{ event.type }}.html event=event %}
         </li>
