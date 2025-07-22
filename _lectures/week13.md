@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2025-04-24
+date: 2025-04-24T14:00:00+08:00
 title: Societal Impacts of Large Language Models
 # tldr: "Short text to discribe what this lecture is about."
 thumbnail: /static_files/presentations/lec.jpg

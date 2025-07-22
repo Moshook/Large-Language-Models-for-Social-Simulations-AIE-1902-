@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2025-03-13
+date: 2025-03-13T14:00:00+08:00
 title: LLM-based Multi-agent Systems
 # tldr: "Short text to discribe what this lecture is about."
 thumbnail: /static_files/presentations/lec.jpg

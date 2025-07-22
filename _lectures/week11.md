@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2025-04-10
+date: 2025-04-10T14:00:00+08:00
 title: LLM Alignment and AI Governance
 # tldr: "Short text to discribe what this lecture is about."
 thumbnail: /static_files/presentations/lec.jpg

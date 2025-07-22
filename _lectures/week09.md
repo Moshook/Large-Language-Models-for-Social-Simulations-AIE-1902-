@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2025-03-27
+date: 2025-03-27T14:00:00+08:00
 title: Fine Tuning LLMs II
 # tldr: "Short text to discribe what this lecture is about."
 thumbnail: /static_files/presentations/lec.jpg

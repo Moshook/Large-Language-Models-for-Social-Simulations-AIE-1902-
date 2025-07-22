@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2025-02-13
+date: 2025-02-13T14:00:00+08:00
 title: Introduction to Large Language Models - Reasoning Language Models
 # tldr: "Short text to discribe what this lecture is about."
 thumbnail: /static_files/presentations/lec.jpg

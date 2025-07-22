@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2025-03-06
+date: 2025-03-06T14:00:00+08:00
 title: Large Language Model Agents
 # tldr: "Short text to discribe what this lecture is about."
 thumbnail: /static_files/presentations/lec.jpg

@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2025-01-09
+date: 2025-01-09T14:00:00+08:00
 title: Introduction to Computational Linguistics and NLP for Social Science
 # tldr: "Short text to discribe what this lecture is about."
 thumbnail: /static_files/presentations/lec.jpg

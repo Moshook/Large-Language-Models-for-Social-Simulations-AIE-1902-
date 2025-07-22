@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2025-01-16
+date: 2025-01-16T14:00:00+08:00
 title: Introduction to Large Language Models - Prompt Engineering
 # tldr: "Short text to discribe what this lecture is about."
 thumbnail: /static_files/presentations/lec.jpg
