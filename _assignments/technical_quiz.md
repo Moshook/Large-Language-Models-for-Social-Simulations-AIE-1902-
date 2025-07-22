@@ -1,13 +1,13 @@
 ---
 type: assignment
 date: 2025-04-13T14:00:00+08:00
-title: 'Assignment #6 - Technical quiz'
+title: 'Technical quiz'
 hide_from_announcments: false
 pdf: /static_files/Techinical_Quiz_final.pdf
 due_event: 
     type: due
     date: 2025-04-20T23:59:59+08:00
-    description: 'Assignment #6 due'
+    description: 'Technical quiz due'
 ---
 This component assesses your ability to apply technical knowledge to real-world problems. The technical quiz is designed to challenge your understanding of the subject, requiring both independent thinking and technical skills.
 - Problem Set: There are two quiz options and you can choose either one to complete.
