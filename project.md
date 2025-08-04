@@ -22,3 +22,7 @@ The individual project is a major component of your final grade, designed to enc
 - [Weekly update assignment 2-6]({{site.baseurl}}/static_files/Weekly_update_report_Assignment_2.pdf)
 - [Final report guidelines]({{site.baseurl}}/static_files/Final_Report_Guidelines.pdf)
 - [Final presentation guidelines]({{site.baseurl}}/static_files/Final_PPT_guideline.pdf)
+
+### Example Projects
+- [Does DeepSeek Exhibit Human-like Biases in HRM Decision-Making? An Experimental Study on Recruitment and Selection in China]({{site.baseurl}}/static_files/sample/Final_Report_Xu_Wanchen.pdf)
+- [Bridging the Empathy Gap: Fine-Tuning Large Language Models for AI Mental Health Support]({{site.baseurl}}/static_files/sample/119030049CSS5210project.pdf)

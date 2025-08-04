@@ -16,3 +16,5 @@ This component assesses your ability to apply technical knowledge to real-world 
 - Take-home Format: This is a take-home quiz, meaning you can use online resources, such as web searches or even GPT, to help you find solutions, but make sure to independently work on your answers.
 - Focus on Problem-solving: The aim is to test your problem-solving skills in applying theoretical concepts to practical, research-related issues.
 - Flexible Submission: Multiple submissions are allowed, and switching options is permitted. The highest score will be counted.
+Here is an example project submitted by a previous student:
+[Fine-Tuning Large Language Models for Chinese Classical Poetry Question Answering]({{site.baseurl}}/static_files/sample/Sample_High_1.zip)
