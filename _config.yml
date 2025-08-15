@@ -1,9 +1,9 @@
 # Site settings
-course_name: CSS5120 Computational Linguistics / Large Language Models and Society
+course_name: AIE1902-Large Language Models for Social Simulations
 course_description: "Large Language Models and Society – This course examines the emergence of large language models and their interaction with society. It begins with a primer on computational linguistics and natural language processing for social science, then delves into the mechanics of contemporary large language models through units on prompt engineering, reasoning capabilities and the diversity of model families. Students gain practical experience with LLM APIs and explore how to build multi agent systems. A series of lectures on fine tuning teaches methods for adapting pre trained models to specific tasks. The course then addresses alignment and governance, covering safety, bias and normative questions around LLM deployment. The final sessions focus on societal impacts, drawing on recent research that uses LLM agents to simulate social phenomena and examines how these models influence human decision making. Through readings, assignments and projects, students will learn to evaluate large language models, implement and fine tune them, and critically analyse their role in shaping human behaviour and public discourse."
-course_semester: "Spring 2025"
+course_semester: "Fall 2025"
 
-baseurl: "/CSS5120" # the subpath of your site, e.g. /blog/
+baseurl: "/AIE1902" # the subpath of your site, e.g. /blog/
 url: "http://TalionS.github.io/" # the base hostname & protocol for your site
 
 schoolname: "The Chinese University of Hong Kong, Shenzhen"
